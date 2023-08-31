@@ -11,5 +11,9 @@ public class Person {
 	private String name = "철수";
 
 	@Autowired
+	Person(Parrot parrot) {
+		this.parrot = parrot;
+	}
+
 	private Parrot parrot;
 }
